@@ -5,51 +5,122 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RP_MN_I3_2024"
         mc:Ignorable="d"
-        Title="OFK" Height="450" Width="800"
+        Title="OFK" Height="601" Width="1084"
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
+        <!--Search Button style-->
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="10 1"/>
+            <Setter Property="Content" Value="Search"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="0 10 10 0" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="Red"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="Red"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="Red"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <!--Searchbar style-->
-        <Style x:Key="SearchBarStyle" TargetType="TextBox">
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+        <Style x:Key="SearchBarStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="LightGray"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
             <Setter Property="Foreground" Value="Gray"/>
             <Setter Property="Text" Value=" Type here to search..."/>
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Height" Value="40"/>
             <Setter Property="Width" Value="500"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" CornerRadius="3 0 0 3" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="Red"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="Red"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Text" Value=""/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Foreground" Value="Gray"/>
+                                <Setter Property="TextBlock.Text" Value=" Type here to search..."/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
-                <Trigger Property="IsKeyboardFocused" Value="True">
-                    <Setter Property="Text" Value=""/>
-                    <Setter Property="Foreground" Value="Black"/>
-                </Trigger>
-                <Trigger Property="Text" Value="">
-                    <Setter Property="Foreground" Value="Gray"/>
-                    <Setter Property="TextBlock.Text" Value=" Type here to search..."/>
-                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
             </Style.Triggers>
-        </Style>
-        
-        <!--Button style-->
-        <Style x:Key="SearchButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Content" Value="Search"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-        </Style>
-        
-        <!--Searchbar + button border--> 
-        <Style x:Key="CombinedSearchBarStyle" TargetType="Border">
-            <Setter Property="CornerRadius" Value="10"/>
-            <Setter Property="BorderBrush" Value="LightGray"/>
-            <Setter Property="BorderThickness" Value="2"/>
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="SnapsToDevicePixels" Value="True"/>
-            <Setter Property="Height" Value="40"/>
         </Style>
     </Window.Resources>
 
@@ -58,22 +129,43 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+
+        <!--Top: SearchBar-->
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Ostrovský Filmový Katalog" FontSize="40" HorizontalAlignment="Center" Margin="0 20"/>
-            <Border Style="{StaticResource CombinedSearchBarStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="tbSearchBar" Style="{StaticResource SearchBarStyle}" TextChanged="tbSearchBar_TextChanged"/>
-                    <Button x:Name="btnSearch" Style="{StaticResource SearchButtonStyle}"/>
-                </StackPanel>
-            </Border>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Style="{DynamicResource SearchBarStyle}" x:Name="tbSearchBar"  TextChanged="tbSearchBar_TextChanged"/>
+                <Button Style="{DynamicResource ButtonStyle}" x:Name="btnSearch"/>
+            </StackPanel>
             <StackPanel>
                 <Label Content="Nejčastěji vyhledávané filmy: "/>
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            
+        <!--Bottom: Movie "Slideshow"-->
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <StackPanel>
+                <Image Source="/images/interstellar-poster.jpg" Height="200"/>
+                <Label Content="4.5"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/images/interstellar-poster.jpg" Height="200"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/images/interstellar-poster.jpg" Height="200"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/images/interstellar-poster.jpg" Height="200"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/images/interstellar-poster.jpg" Height="200"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
         </StackPanel>
-        
+
     </Grid>
 </Window>
