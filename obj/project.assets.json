@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Novoty\\.nuget\\packages\\": {}
+    "C:\\Users\\mira0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
+      "projectUniqueName": "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
       "projectName": "RP_MN_I3_2024",
-      "projectPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
-      "packagesPath": "C:\\Users\\Novoty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\obj\\",
+      "projectPath": "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
+      "packagesPath": "C:\\Users\\mira0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mira0\\Desktop\\movie-catalog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Novoty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mira0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -69,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
