@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\mira0\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mira0\\.nuget\\packages"
+      "C:\\Users\\Novoty\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Novoty\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
