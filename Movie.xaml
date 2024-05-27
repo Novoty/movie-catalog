@@ -1,0 +1,58 @@
+﻿<Window x:Class="RP_MN_I3_2024.Movie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RP_MN_I3_2024"
+        mc:Ignorable="d"
+        Title="OFK" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">
+            <Label Content="Interstellar" HorizontalAlignment="Center" FontSize="50"/>
+            <StackPanel x:Name="OriginalTitle" Orientation="Horizontal">
+                <Label Content="Original title:"/>
+                <Label Content="Interstellar"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="Year" Content="2012"/>
+                <Label x:Name="PG" Content="PG12"/>
+                <Label x:Name="FilmLength" Content="2h 49m"/>
+            </StackPanel>
+            <Image Source="/images/interstellar-poster.jpg" Height="400"/>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="Genre1" Content="Adventure"/>
+                <Label x:Name="Genre2" Content="Drama"/>
+                <Label x:Name="Genre3" Content="Sci-Fi"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Button x:Name="Watchlist" Content="Add to Watchlist" Height="60"/>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lblDirector" Content="Director"/>
+                    <Label x:Name="Director" Content="Christopher Nolan"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lblWriter" Content="Writer:"/>
+                    <Label x:Name="Writer1" Content="Jonathan Nolan"/>
+                    <Label x:Name="Writer2" Content="Jonathan Nolan"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lblStars" Content="Stars:"/>
+                    <Label x:Name="Star1" Content="Matthew McConaughey"/>
+                    <Label x:Name="Star2" Content="Matthew McConaughey"/>
+                    <Label x:Name="Star3" Content="Matthew McConaughey"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

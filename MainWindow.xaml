@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RP_MN_I3_2024"
         mc:Ignorable="d"
-        Title="OFK" Height="601" Width="1084"
+        Title="OFK" Height="600" Width="1100"
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
