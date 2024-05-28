@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RP_MN_I3_2024"
         mc:Ignorable="d"
-        Title="OFK" Height="601" Width="1084"
+        Title="OFK" Height="600" Width="1100"
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
@@ -20,7 +20,11 @@
             </Setter>
         </Style>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+<<<<<<< HEAD
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FFADB2B5"/>
+=======
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="Gray"/>
+>>>>>>> main
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
             <Setter Property="Background" Value="LightGray"/>
@@ -28,7 +32,7 @@
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="10 1"/>
+            <Setter Property="Padding" Value="10 0 10 5"/>
             <Setter Property="Content" Value="Search"/>
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Height" Value="40"/>
@@ -137,13 +141,18 @@
                 <Button Style="{DynamicResource ButtonStyle}" x:Name="btnSearch"/>
             </StackPanel>
             <StackPanel>
-                <Label Content="Nejčastěji vyhledávané filmy: "/>
+                <Label Content="Nejčastěji vyhledávané filmy: " FontSize="15"/>
             </StackPanel>
         </StackPanel>
 
         <!--Bottom: Movie "Slideshow"-->
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+<<<<<<< HEAD
+            <Button x:Name="Backwards" Width="40" Height="80" Padding="0 0 0 5" Content="&lt;" FontSize="40" Background="Transparent" BorderBrush="Transparent"/>
+
+=======
             <Button Width="50" Height="40"/>
+>>>>>>> main
             <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="4.5"/>
@@ -165,7 +174,12 @@
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
+<<<<<<< HEAD
+            <Button x:Name="Forward" Width="40" Height="80" Padding="0 0 0 5" Content="&gt;" FontSize="40" Background="Transparent" BorderBrush="Transparent"/>
+
+=======
             <Button Width="50" Height="40"/>
+>>>>>>> main
         </StackPanel>
 
     </Grid>
