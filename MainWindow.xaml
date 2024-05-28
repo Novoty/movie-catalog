@@ -19,15 +19,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="Gray"/>
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
             <Setter Property="Background" Value="LightGray"/>
@@ -122,6 +115,12 @@
                 </MultiTrigger>
             </Style.Triggers>
         </Style>
+
+        <Style x:Key="SlideShowStyle" TargetType="{x:Type StackPanel}">
+            <Setter Property="Margin" Value="20 0"/>
+        </Style>
+        
+        
     </Window.Resources>
 
     <Grid>
@@ -144,27 +143,29 @@
 
         <!--Bottom: Movie "Slideshow"-->
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-            <StackPanel>
+            <Button Width="50" Height="40"/>
+            <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="4.5"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
+            <Button Width="50" Height="40"/>
         </StackPanel>
 
     </Grid>
