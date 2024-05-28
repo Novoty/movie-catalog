@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj": {}
+    "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj": {
+    "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
+        "projectUniqueName": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
         "projectName": "RP_MN_I3_2024",
-        "projectPath": "C:\\Users\\mira0\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
-        "packagesPath": "C:\\Users\\mira0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mira0\\Desktop\\movie-catalog\\obj\\",
+        "projectPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
+        "packagesPath": "C:\\Users\\Novoty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mira0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Novoty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
