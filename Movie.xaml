@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RP_MN_I3_2024"
         mc:Ignorable="d"
-        Title="OFK" Height="600" Width="1200">
+        Title="OFK" Height="600" Width="1100">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -78,13 +78,24 @@
         </StackPanel>
         
         <!--Rating-->
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <Label Content="IMDB rating" FontSize="20"/>
-            <StackPanel Orientation="Horizontal">
-                <Image Source="/images/star.png" Width="40"/>
-                <TextBlock Text="8,1/10" FontSize="30"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+            <StackPanel Margin="20 0">
+                <Label Content="IMDB rating" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="8,1/10" FontSize="30" HorizontalAlignment="Center">
+                    <Image Source="/images/star.jpg" Width="30"/>
+                </TextBlock>
             </StackPanel>
-        </StackPanel>
+            <StackPanel Margin="20 0">
+                <Label Content="CSFD rating" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="91%" FontSize="30" HorizontalAlignment="Center"/>
+            </StackPanel>
+                <StackPanel Margin="20 0">
+                    <Label Content="Your rating" FontSize="20" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Rate" FontSize="30" HorizontalAlignment="Center">
+                        <Image Source="/images/EmptyStar.png"/>
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

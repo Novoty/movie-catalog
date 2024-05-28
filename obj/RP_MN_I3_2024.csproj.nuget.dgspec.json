@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj": {}
+    "C:\\Users\\Novoty\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj": {
+    "C:\\Users\\Novoty\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
+        "projectUniqueName": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
         "projectName": "RP_MN_I3_2024",
-        "projectPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\RP_MN_I3_2024.csproj",
+        "projectPath": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\RP_MN_I3_2024.csproj",
         "packagesPath": "C:\\Users\\Novoty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\obj\\",
+        "outputPath": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Novoty\\AppData\\Roaming\\NuGet\\NuGet.Config",

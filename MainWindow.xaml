@@ -20,11 +20,7 @@
             </Setter>
         </Style>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-<<<<<<< HEAD
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FFADB2B5"/>
-=======
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="Gray"/>
->>>>>>> main
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
             <Setter Property="Background" Value="LightGray"/>
@@ -147,12 +143,8 @@
 
         <!--Bottom: Movie "Slideshow"-->
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-<<<<<<< HEAD
             <Button x:Name="Backwards" Width="40" Height="80" Padding="0 0 0 5" Content="&lt;" FontSize="40" Background="Transparent" BorderBrush="Transparent"/>
 
-=======
-            <Button Width="50" Height="40"/>
->>>>>>> main
             <StackPanel Style="{StaticResource SlideShowStyle}">
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="4.5"/>
@@ -174,13 +166,7 @@
                 <Image Source="/images/interstellar-poster.jpg" Height="200"/>
                 <Label Content="Interstellar"/>
             </StackPanel>
-<<<<<<< HEAD
             <Button x:Name="Forward" Width="40" Height="80" Padding="0 0 0 5" Content="&gt;" FontSize="40" Background="Transparent" BorderBrush="Transparent"/>
-
-=======
-            <Button Width="50" Height="40"/>
->>>>>>> main
         </StackPanel>
-
     </Grid>
 </Window>
