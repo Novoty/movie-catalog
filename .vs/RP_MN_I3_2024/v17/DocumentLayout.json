@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\",
+  "WorkspaceRootPath": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|c:\\users\\novoty\\desktop\\rp_mn_i3_2024\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|c:\\users\\novoty\\desktop\\movie-catalog\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|c:\\users\\novoty\\desktop\\movie-catalog\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|c:\\users\\novoty\\desktop\\movie-catalog\\movie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|solutionrelative:movie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Novoty\\Desktop\\movie-catalog\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|c:\\users\\novoty\\desktop\\movie-catalog\\movie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3BA70C-40B2-4C2F-BF96-353792338243}|RP_MN_I3_2024.csproj|solutionrelative:movie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,18 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+              "ToolTip": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+              "RelativeToolTip": "obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAUwMkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:17:00.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Movie.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\Movie.xaml.cs",
+              "RelativeDocumentMoniker": "Movie.xaml.cs",
+              "ToolTip": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\Movie.xaml.cs",
+              "RelativeToolTip": "Movie.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAASwCoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T13:49:41.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movie.xaml",
+              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\Movie.xaml",
+              "RelativeDocumentMoniker": "Movie.xaml",
+              "ToolTip": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\Movie.xaml",
+              "RelativeToolTip": "Movie.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-01T12:39:17.784Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Novoty\\Desktop\\RP_MN_I3_2024\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-22T18:15:34.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Novoty\\Desktop\\movie-catalog\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:05:57.043Z",
               "EditorCaption": ""
             }
           ]

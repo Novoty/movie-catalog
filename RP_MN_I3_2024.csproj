@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="images\" />
+    <None Remove="Resources\empty-star.png" />
+    <None Remove="Resources\interstellar-poster.jpg" />
+    <None Remove="Resources\yellow-star.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\empty-star.png" />
+    <Resource Include="Resources\interstellar-poster.jpg" />
+    <Resource Include="Resources\yellow-star.png" />
   </ItemGroup>
 
 </Project>
